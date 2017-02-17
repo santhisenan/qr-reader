@@ -1,0 +1,5 @@
+{
+    "require": {
+        "khanamiryan/qrcode-detector-decoder": "dev-master"
+    }
+}
