@@ -15,6 +15,11 @@ class LoginController extends CI_Controller {
 		$regNumber = $qrcode->text();
 		$data['regNumber'] = $regNumber; 
 		$this->load->view('qrtext',$data);
+
+	}
+	public function getqr(){
+		$image = $this->input->post('image');
+		$this->load->view('success');
 	}
 
 }
