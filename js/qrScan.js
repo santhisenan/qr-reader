@@ -1,4 +1,4 @@
-var player = document.getElementById('player');
+var player = document.getElementById('videoPlayer');
 var snapshotCanvas = document.getElementById('snapshot');
 var captureButton = document.getElementById('capture');
 var playVideo = function(stream){
@@ -7,6 +7,7 @@ var playVideo = function(stream){
 
 captureButton.addEventListener('click', function(){
 	var context = snapshot.getContext('2d');
+	console.log(context);
     context.drawImage(player, 0, 0, snapshotCanvas.width, snapshotCanvas.height);
 });
 

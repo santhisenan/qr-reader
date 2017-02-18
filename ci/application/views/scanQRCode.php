@@ -5,7 +5,7 @@
 	</head>
 	<form action="../loginController/readqr">
 		<div id="cameraContainer">
-		<video id="videoPlayer"  autoplay></video>
+		<video id="videoPlayer"  autoplay ></video>
 		<button id="capture">Capture</button>
 		<canvas id="snapshot"></canvas>
 		</div>
