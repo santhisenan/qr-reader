@@ -10,6 +10,7 @@ class LoginController extends CI_Controller {
 
 	}
 	public function readqr(){
+		$this->load->view('scanQRCode');
 		$qrcode = new QrReader('../assets/1.jpg');
 		$regNumber = $qrcode->text();
 		$data['regNumber'] = $regNumber; 

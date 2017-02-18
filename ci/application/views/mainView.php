@@ -3,7 +3,7 @@
 		<title>
 		</title>
 	</head>
-	<form action="loginController/readqr">
+	<form action="../loginController/readqr">
 		<button type="submit">Login</button>
 	</form>
 </html>
