@@ -20,9 +20,6 @@ if(navigator.mediaDevices === undefined){
 	navigator.mediaDevices = {};
 }
 
-// Some browsers partially implement mediaDevices. We can't just assign an object
-// with getUserMedia as it would overwrite existing properties.
-// Here, we will just add the getUserMedia property if it's missing.
 if (navigator.mediaDevices.getUserMedia === undefined) {
   navigator.mediaDevices.getUserMedia = function(constraints) {
 
@@ -43,11 +40,12 @@ if (navigator.mediaDevices.getUserMedia === undefined) {
 }
 navigator.mediaDevices.getUserMedia( {video: { facingMode: { exact: "environment" } }}).then(playVideo);
 
-$('#capture').click(
+$('#capture').click(function(e){
+  e.preventDefault();
 	$.ajax({
 		url:"../loginController/getqr",
 		type :"post",
 		data :{'image':image},
 		success : function(){alert("qr code read")}
-	})
+	})}
 );
