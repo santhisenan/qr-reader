@@ -1,4 +1,4 @@
-#QR Code Reader for HTML5 Websites
+#QR Code Reader 
 
 ###Description
 --------------
