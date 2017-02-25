@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<form action="mainController/read">
-			<button type="submit">Login</button>
+			<button type="submit">Scan QR Code</button>
 		</form>
 	</body>
 </html>
