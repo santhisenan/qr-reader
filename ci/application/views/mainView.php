@@ -1,9 +1,12 @@
 <html>
 	<head>
 		<title>
+			QR Reader
 		</title>
 	</head>
-	<form action="loginController/readqr">
-		<button type="submit">Login</button>
-	</form>
+	<body>
+		<form action="mainController/read">
+			<button type="submit">Login</button>
+		</form>
+	</body>
 </html>
